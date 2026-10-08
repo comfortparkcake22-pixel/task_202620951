@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <title>HTML page</title>
         <style type="text/css">
-            p{font-size :40px}
+            #book{width:80%;border-spacing:0.5px;min-width:500px}
+            p{font-size :30px;background-color: aqua;}
+            p:hover{background-color: lemonchiffon;transition:background-color 5s;transform:scale(0.75,4)}
+            td{background-color: chartreuse;}
             .red{color:red;font-size :40px}
             .blue{color:skyblue;font-size:30px}
             span{color:blue}
@@ -12,10 +15,32 @@
     </head>
 
     <body>
-        <h1>hello world</h1>
-        <h2>hello world</h2>
+        <table border="5" id="book">
+            <tr>
+                <th>과목</th>
+                <th>책제목</th>
+                <th>저자</th>
+                <th>출판사</th>
+            </tr>
+            <tr>
+                <td rowspan="2">웹프로그래밍</td>
+                <td>html5웹프로그래밍 입문</td>
+                <td>임순범</td>
+                <td>생능</td>
+            </tr>
+            <tr>
+                <td>소셜미디어 시대의 인터넷활용</td>
+                <td>박희민</td>
+                <td>생능</td>
+            </tr>
+            <tr>
+                <td>합계</td>
+                <td colspan="3">3권</td>
+            </tr>
+        <p>안녕하세요</p>
+        <h1 class="red">hello world</h1>
+        <h2 class="blue">hello world</h2>
         <h3>안녕하세요</h3>
-        <h6 class="red">김치볶음밥</h6>
-        <h6 class="red"><span class="blue">김치</span>찌개</h6>
+        
     </body>
 </html>

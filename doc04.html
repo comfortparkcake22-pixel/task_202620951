@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <title>가상클래스 선택자</title>
         <style type="text/css">
+            ol li {list-style-type:upper-alpha;}
+            ol{list-style-position: inside;background-color: antiquewhite;}
+            ul{list-style-position: outside;background-color: bisque;}
+            li.usa{list-style-type:square;}
+            li.kor{list-style-image:url();}
+            tr{background-color:coral;}
             p{font-size:10pt}
             a:link{color:blue}
             a:visited{color:rgb(128, 0, 85)}
@@ -19,9 +25,9 @@
         <p>선택자에 <a href="http://www.w3c.org">가상클래스</a>와 <a href="http://www.smu.ac.kr">선택자조합을 </a>적용하여 스타일을 지정합니다</p>
         <p>순서가 없는 목록</p>
         <ul>
-            <li>첫번째 항목(list item)</li>
-            <li>두번째 항목(list item)</li>
-            <li>세번째 항목(list item)</li>
+            <li class="usa">첫번째 항목(list item)</li>
+            <li class="kor">두번째 항목(list item)</li>
+            <li class="usa">세번째 항목(list item)</li>
         </ul>
         <p>순서가 있는 목록</p>
         <ol>
@@ -29,6 +35,24 @@
             <li>두번째 항목(list item)</li>
             <li>세번째 항목(list item)</li>
         </ol>
+        <h3>기본적인 표의 표현</h3>
+        <table border="5">
+            <tr>
+                <th>책제목</th>
+                <th>저자</th>
+                <th>출판사</th>
+            </tr>
+            <tr>
+                <td>html5 웹프로그래밍 입문</td>
+                <td>최윤정,임순범</td>
+                <td rowspan="2">생각</td>
+            </tr>
+            <tr>
+                <td>소셜미디어 시대의 활용</td>
+                <td>박희민,김남호</td>
+            </tr>
+        </table>
+
     </body>
 
 
