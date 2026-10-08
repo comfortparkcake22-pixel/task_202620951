@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="kor">
     <head>
         <meta charset="UTF-8">
-        <title>HTML page</title>
+        <title>가상클래스 선택자</title>
         <style type="text/css">
-            p{font-size :40px}
-            .red{color:red;font-size :40px}
-            .blue{color:skyblue;font-size:30px}
-            span{color:blue}
+            p{font-size:10pt}
+            a:link{color:blue}
+            a:visited{color:rgb(128, 0, 85)}
+            h3:before{content:"◆";color:blue}
+            h3:after{content:"(ⓒsblim)"; font-size:10pt }
+            h3:hover{color:rgb(0, 136, 255); background-color:yellow}
+
         </style>
     </head>
-
     <body>
-        <h1>hello world</h1>
-        <h2>hello world</h2>
-        <h3>안녕하세요</h3>
-        <h6 class="red">김치볶음밥</h6>
-        <h6 class="red"><span class="blue">김치</span>찌개</h6>
+        <h3><strong>스타일시트</strong>이해하기</h3>
+        <p>이 예제는 <strong>CSS</strong>의 개념을 설명합니다.</p>
+        <p>선택자에 <a href="http://www.w3c.org">가상클래스</a>와 <a href="http://www.smu.ac.kr">선택자조합을 </a>적용하여 스타일을 지정합니다</p>
     </body>
+
+
+
 </html>
