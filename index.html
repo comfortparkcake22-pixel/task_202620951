@@ -1,24 +1,135 @@
 <!DOCTYPE html>
-<html lang="kor">
+<html lang="ko">
     <head>
+        <title>포트폴리오</title>
         <meta charset="UTF-8">
-        <title>가상클래스 선택자</title>
-        <style type="text/css">
-            p{font-size:10pt}
-            a:link{color:blue}
-            a:visited{color:rgb(128, 0, 85)}
-            h3:before{content:"◆";color:blue}
-            h3:after{content:"(ⓒsblim)"; font-size:10pt }
-            h3:hover{color:rgb(0, 136, 255); background-color:yellow}
-
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h3><strong>스타일시트</strong>이해하기</h3>
-        <p>이 예제는 <strong>CSS</strong>의 개념을 설명합니다.</p>
-        <p>선택자에 <a href="http://www.w3c.org">가상클래스</a>와 <a href="http://www.smu.ac.kr">선택자조합을 </a>적용하여 스타일을 지정합니다</p>
+        <div class="wrapper">
+            <header class="profile-card">
+                <div class="profile-photo">
+                    <img src="프로필.gif" alt="프로필 사진">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-top">
+                        <h1 class="nickname">sy230</h1>
+                        <a class="github-link" href="https://github.com/comfortparkcake22-pixel">GitHub 링크 &rarr;</a>
+                    </div>
+                    <p class="affiliation">상명대 소프트웨어학과 1학년</p>
+                    <p class="intro" tabindex="0">
+                        <span class="hint">▶ 마우스를 올려보세요</span>
+                        <span class="ch" style="--i:0">저</span><span class="ch" style="--i:1">는</span>
+                        <span class="ch" style="--i:2">백</span><span class="ch" style="--i:3">엔</span><span class="ch" style="--i:4">드</span><span class="ch" style="--i:5">와</span>
+                        <span class="ch" style="--i:6">인</span><span class="ch" style="--i:7">공</span><span class="ch" style="--i:8">지</span><span class="ch" style="--i:9">능</span><span class="ch" style="--i:10">에</span>
+                        <span class="ch" style="--i:11">관</span><span class="ch" style="--i:12">심</span><span class="ch" style="--i:13">이</span>
+                        <span class="ch" style="--i:14">있</span><span class="ch" style="--i:15">습</span><span class="ch" style="--i:16">니</span><span class="ch" style="--i:17">다</span><span class="ch" style="--i:18">.</span>
+                    </p>
+                </div>
+            </header>
+
+            <main>
+                <section>
+                    <article>
+                        <h3>실적</h3>
+                        <table>
+                            <tr>
+                                <th>시기</th>
+                                <th>분류</th>
+                                <th>내용</th>
+                                <th>역할</th>
+                            </tr>
+                            <tr>
+                                <td>2025.06</td>
+                                <td>활동</td>
+                                <td>탄소와 그래핀의 활용에 대한 발표</td>
+                                <td>공동발표자</td>
+                            </tr>
+                            <tr>
+                                <td>2024.05</td>
+                                <td>활동</td>
+                                <td>아두이노 동아리에서 피아노제작</td>
+                                <td>부원</td>
+                            </tr>
+                            <tr>
+                                <td>2023.12</td>
+                                <td>프로젝트</td>
+                                <td>유니티로 간단한 2d 게임제작</td>
+                                <td>제작자</td>
+                            </tr>
+                            <tr>
+                                <td>2023.05</td>
+                                <td>활동</td>
+                                <td>교내 환경 동영상 공모전</td>
+                                <td>편집자/카메라맨</td>
+                            </tr>
+                        </table>
+
+                        <div class="game-shots">
+                            <figure>
+                                <img src="game1.png" alt="게임화면 1">
+                                <figcaption>게임 화면 1</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="game2.png" alt="게임화면 2">
+                                <figcaption>게임 화면 2</figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>2026-2학기 수강과목</h3>
+                        <ul>
+                            <li class="GE"><span class="tag">교양</span>사고와 표현</li>
+                            <li class="GE"><span class="tag">교양</span>english for purpose</li>
+                            <li class="Major"><span class="tag">전공</span>이산수학</li>
+                            <li class="GE"><span class="tag">교양</span>인공지능과 문제해결</li>
+                            <li class="Major"><span class="tag">전공</span>컴퓨터프로그래밍</li>
+                            <li class="Major"><span class="tag">전공</span><a href="#webprogramming">웹프로그래밍 및 AI에이전트 활용</a></li>
+                            <li class="Major"><span class="tag">전공</span>컴퓨터프로그래밍 실습</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h3><a id="webprogramming">웹프로그래밍 주차별 링크</a></h3>
+                        <table>
+                            <tr>
+                                <th>주차별</th>
+                                <th>링크</th>
+                            </tr>
+                            <tr><td>1주차</td><td>링크</td></tr>
+                            <tr>
+                                <td>2주차</td>
+                                <td><a href="2주차.html">링크</a></td>
+                            </tr>
+                            <tr><td>3주차</td><td>링크</td></tr>
+                            <tr><td>4주차</td><td>링크</td></tr>
+                            <tr>
+                                <td>5주차</td>
+                                <td><a href="5주차.html">링크</a></td>
+                            </tr>
+                            <tr>
+                                <td>6주차</td>
+                                <td><a href="6주차.html">링크</a></td>
+                            </tr>
+                            <tr>
+                                <td>7주차</td>
+                                <td><a href="7주차.html">링크</a></td>
+                            </tr>
+                            <tr class="upcoming"><td>8주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>9주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>10주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>11주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>12주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>13주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>14주차</td><td>예정</td></tr>
+                            <tr class="upcoming"><td>15주차</td><td>예정</td></tr>
+                        </table>
+                    </article>
+                </section>
+            </main>
+
+            <footer>
+                <p>최종수정일: 2026-10-17</p>
+            </footer>
+        </div>
     </body>
-
-
-
 </html>
