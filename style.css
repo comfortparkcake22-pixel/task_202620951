@@ -481,5 +481,5 @@ main h2, main h3 {
     text-shadow: 0 0 10px rgba(143, 255, 250, 0.7);
 }
 main > section > h2 {
-    font-size: 33px;        /* 11px x 3 */
+    font-size: 33px;      
 }
