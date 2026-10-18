@@ -468,3 +468,18 @@ li:hover .tag {
         transition: none !important;
     }
 }
+/* 제목은 굵게 하지 않음 (픽셀 폰트가 번지는 것 방지) */
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+/* 본문 제목 모양: h2/h3 어느 쪽이든 같은 네온 스타일 */
+main h2, main h3 {
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+    color: var(--aqua);
+    text-shadow: 0 0 10px rgba(143, 255, 250, 0.7);
+}
+main > section > h2 {
+    font-size: 1.4rem;
+}
