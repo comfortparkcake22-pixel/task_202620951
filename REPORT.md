@@ -75,7 +75,7 @@
 
 |---|---|---|---|
 
-| F-01 | 배포 URL을 창 너비 1280px에서 열고, 스크롤 없이(④) ① 활동명 ② 소속 ③ 한 줄 소개(1문장, 글자 수 확인)가 보이는지 확인 | Pass | [캡처](f01.png) |
+| F-01 | 배포 URL을 창 너비 1280px에서 열고, 스크롤 없이(④) ① 활동명 ② 소속 ③ 한 줄 소개(1문장, 글자 수 확인)가 보이는지 확인 | Pass | [캡처](images/f01.png) |
 
 | F-02 | ( ) | ( ) | ( ) |
 
@@ -87,9 +87,9 @@
 
 | F-06 | ( ) | ( ) | ( ) |
 
-| Q-HTML | W3C HTML 검사기(https://validator.w3.org/)로 배포 URL 검사 | Fail | [캡처](q-html.png) |
+| Q-HTML | W3C HTML 검사기(https://validator.w3.org/)로 배포 URL 검사 | Fail | [캡처](images/q-html.png) |
 
-| Q-CSS | W3C CSS 검사기(https://jigsaw.w3.org/css-validator/)로 검사 + 인라인 style 사용 여부 확인 + 창 크기 변경 확인 | Pass | [캡처](q-css.png) |
+| Q-CSS | W3C CSS 검사기(https://jigsaw.w3.org/css-validator/)로 검사 + 인라인 style 사용 여부 확인 + 창 크기 변경 확인 | Pass | [캡처](images/q-css.png) |
 
 | Q-DEPLOY | 배포 URL에서 모든 링크 클릭, 모든 이미지 표시 확인 | ( ) | ( ) |
 
