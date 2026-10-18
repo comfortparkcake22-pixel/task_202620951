@@ -181,14 +181,14 @@ article {
     box-shadow: 0 0 0 3px #071516, 0 0 24px rgba(53, 232, 255, 0.18);
 }
 
-article h3 {
+article h2 {
     margin: 0 0 16px;
     font-size: 1.2rem;
     font-weight: normal;
     color: var(--aqua);
     text-shadow: 0 0 10px rgba(143, 255, 250, 0.7);
 }
-article h3::before {
+article h2::before {
     content: "\25B8 ";
     color: var(--mint);
 }
@@ -388,7 +388,7 @@ article:nth-of-type(3) { animation-delay: 0.65s; }
     animation: nudge 0.5s steps(2) infinite;
 }
 
-article h3 {
+article h2 {
     animation: textGlow 2s ease-in-out infinite alternate;
 }
 
