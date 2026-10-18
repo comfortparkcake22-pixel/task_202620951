@@ -182,14 +182,14 @@ article {
     box-shadow: 0 0 0 3px #071516, 0 0 24px rgba(53, 232, 255, 0.18);
 }
 
-article h2 {
+article h2, article h3 {
     margin: 0 0 16px;
-    font-size: 1.2rem;
+    font-size: 22px;
     font-weight: normal;
     color: var(--aqua);
     text-shadow: 0 0 10px rgba(143, 255, 250, 0.7);
 }
-article h2::before {
+article h2::before, article h3::before {
     content: "\25B8 ";
     color: var(--mint);
 }
@@ -389,7 +389,7 @@ article:nth-of-type(3) { animation-delay: 0.65s; }
     animation: nudge 0.5s steps(2) infinite;
 }
 
-article h2 {
+article h2, article h3 {
     animation: textGlow 2s ease-in-out infinite alternate;
 }
 
@@ -476,10 +476,10 @@ h1, h2, h3 {
 /* 본문 제목 모양: h2/h3 어느 쪽이든 같은 네온 스타일 */
 main h2, main h3 {
     margin: 0 0 16px;
-    font-size: 1.2rem;
+    font-size: 22px;        /* 갈무리11 기준 2배(11px x 2): 획이 또렷하게 나옴 */
     color: var(--aqua);
     text-shadow: 0 0 10px rgba(143, 255, 250, 0.7);
 }
 main > section > h2 {
-    font-size: 1.4rem;
+    font-size: 33px;        /* 11px x 3 */
 }
